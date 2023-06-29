@@ -1,0 +1,128 @@
+@import "./components/window_control_placeholder_support.css";
+@import "./components/tabs_on_bottom.css";
+
+:root {
+	--tab-border-radius: 3px !important;
+	--navbar-height: 22px !important;
+	--focus-outline-color: none !important;
+	--urlbar-box-focus-bgcolor: none !important;
+}
+
+* {
+	font-family: "MCBOLD" !important;
+	font-weight: bolder !important;
+	font-size: 11px !important;
+}
+
+
+/* Customize tabs width */
+.tabbrowser-tab:not([style^="max-width"]):not([pinned]),
+.tabbrowser-tab[style^="max-width: 100px !important;"]:not([pinned]) {
+	max-width: 100% !important;
+}
+
+.tabbrowser-tab:not([style^="max-width"]):not([pinned]):not([fadein]),
+.tabbrowser-tab[style^="max-width: 100px !important;"]:not([pinned]):not([fadein]) {
+	max-width: .1px !important;
+}
+
+/* Customizing tabs height */
+.tab-icon-image {
+	width: 1rem !important;
+	height: 1rem !important;
+}
+#TabsToolbar {
+	max-height: 20px !important;
+}
+#TabsToolbar, #tabbrowser-tabs {
+    --tab-min-height: 20px !important;
+}
+.tab-close-button {
+	width: 1rem !important;
+	height: 1rem !important;
+	padding: 0px !important;
+	margin-inline-end: 5px !important;
+	border-radius: 3px !important;
+}
+.tab-close-button:hover {
+	background-color: #e22850 !important;
+}
+
+.tab-background {
+	margin: 0px !important;
+	padding-left: 6px !important;
+	margin-block: 0 !important;
+}
+.tab-label-container {
+	height: 1rem !important;
+}
+.tab-label {
+	font-size: 10px !important;
+}
+.tabbrowser-tab {
+	margin: 0 !important;
+}
+
+/* Customizing the nav-bar height */
+#nav-bar{ 
+	height: 26px !important;
+}
+
+#urlbar-background, #searchbar {
+	background-color: #11111b !important;
+}
+
+/* Customize titlebar buttons */
+.titlebar-button {
+	transition: all 0.3s ease !important;
+	padding: 8px 10px !important;
+    
+}
+.titlebar-button > .toolbarbutton-icon {
+	transition: all 0.3s ease !important;
+	list-style-image: none;
+  	border: 1px solid;
+	border-radius: 10px;
+}
+.titlebar-button.titlebar-min > .toolbarbutton-icon {
+	background: #27c840 !important;
+  border-color: #27c83f7a !important;
+}
+
+.titlebar-button.titlebar-max > .toolbarbutton-icon,
+.titlebar-button.titlebar-restore > .toolbarbutton-icon {
+	background: #febb2e !important;
+  	border-color: #febc2e7c !important;
+}
+
+.titlebar-button.titlebar-close > .toolbarbutton-icon {
+	background: #ff5f57 !important;
+	stroke: #ff5f57 !important;
+  	border-color: #ff5f5777 !important;
+  
+}
+.titlebar-button.titlebar-close:hover > .toolbarbutton-icon {
+	background: #ff5f5742 !important;
+  	border: 1px solid;
+  	border-color: #ff5f57 !important;
+}
+.titlebar-button.titlebar-close:hover {
+	background: #fdfdfd00 !important;
+}
+.titlebar-button.titlebar-max:hover > .toolbarbutton-icon,
+.titlebar-button.titlebar-restore:hover > .toolbarbutton-icon {
+	background: #febc2e44 !important;
+  	border: 1px solid;
+  	border-color: #febb2e !important;
+}
+.titlebar-button.titlebar-max:hover, .titlebar-button.titlebar-restore:hover {
+	background: #fdfdfd00 !important;
+}
+.titlebar-button.titlebar-min:hover > .toolbarbutton-icon {
+	background: #27c83f38 !important;
+  	border: 1px solid;
+  	border-color: #27c840 !important;
+}
+.titlebar-button.titlebar-min:hover {
+	background: #fdfdfd00 !important;
+}
